@@ -13,7 +13,7 @@
 }
 
 a {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	text-decoration: none;
 	color: #0d212e;
 	transition: color 0.3s ease;
@@ -41,12 +41,16 @@ html {
 	scroll-behavior: smooth;
 }
 
-p {
-	font-size: 1rem;
+#work p,
+#contact p,
+#testi p,
+#blog p {
+	font-size: 1.2rem;
 }
 
 h2 {
-	color: var(--link);
+	color: var(--pmr);
+	font-size: 1.8rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -91,6 +95,7 @@ header .logo {
 header .tagline {
 	font-size: 1rem;
 	font-style: italic;
+	opacity: 0.9;
 }
 
 /* NAVBAR */
@@ -123,30 +128,28 @@ main {
 	margin: 0.5rem 1rem;
 }
 
-#about .abtcont {
-	display: grid;
-	grid-template-columns: 120px auto;
-}
-
 #about img {
-	width: 120px;
-	height: 140px;
+	width: 150px;
+	height: 170px;
 	object-fit: cover;
 	border-radius: 15px;
 	align-self: center;
-	margin: 0 20px;
+}
+
+#about .abtcont {
+	display: grid;
+	grid-template-columns: 160px auto;
 }
 
 #about .sdee {
-	margin-top: 1rem;
-	padding: 0 40px 1rem;
+	margin: 0.5rem 1rem 0;
+	padding-bottom: 1rem;
 	color: #0d212e;
 }
 
 #about .sdee p {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
-
 /* WORK Section */
 #work {
 	padding-bottom: 0;
@@ -185,6 +188,7 @@ main {
 }
 
 #projects .project .listp h3 {
+	font-size: 1.3rem;
 	color: var(--pmr);
 }
 
@@ -199,7 +203,7 @@ main {
 #projects .project .li {
 	/* background-color: #21d833; */
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 	/* 225/230 */
 	gap: 2rem;
 	padding-top: 2rem;
@@ -214,7 +218,7 @@ main {
 #projects .project .listp {
 	background-color: var(--white);
 	padding: 20px;
-	border-radius: 7px;
+	border-radius: 7px 55px 7px 7px;
 	box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -232,6 +236,7 @@ main {
 }
 
 .pdecs span {
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -286,7 +291,7 @@ footer {
 	color: white;
 	text-align: center;
 	padding: 20px;
-	border-radius: 0 6vw 0 6vw;
+	border-radius: 0 20vw 0 20vw;
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 	margin-top: 40px;
 }
@@ -307,7 +312,7 @@ footer {
 	}
 
 	a {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 
 	main {
@@ -322,26 +327,24 @@ footer {
 		border-radius: 7px 100px 7px 7px;
 	}
 
-	/* Tablet About */
+	/* ABOUT Section */
 	#about h2 {
 		text-align: center;
 		margin: 0;
 	}
 
-	#about .abtcont {
-		grid-template-columns: 100%;
-		justify-items: center;
-	}
-
 	#about img {
 		width: 150px;
-		height: 170px;
-		margin: 0.5rem 0;
+		height: 160px;
+		border-radius: 10px;
 	}
 
 	#about .sdee {
-		margin: 0.8rem 0.8rem 0;
-		padding: 20px;
+		margin: 0.8rem;
+	}
+
+	#about .sdee p {
+		font-size: 0.9rem;
 	}
 
 	.links ul {
@@ -380,29 +383,11 @@ footer {
 		border-radius: 7px 70px 7px 7px;
 	}
 
-	/* Mobile Header */
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 8px 15px;
-		border-radius: 0 0 3px 3px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	/* ABOUT Section */
+	#about .abtcont {
+		grid-template-columns: 100%;
+		justify-items: center;
 	}
-
-	header .logo {
-		height: 2rem;
-	}
-
-	header .tagline {
-		display: none;
-	}
-
-	header svg {
-		display: flex;
-	}
-
-	/* Mobile About */
 
 	#about img {
 		height: 170px;
@@ -411,10 +396,12 @@ footer {
 
 	#about .sdee {
 		margin: 0.8rem 0.8rem 0;
-		padding: 0;
 	}
 
-	/* Mobile Project */
+	/* PROJEK Section */
+	#projects .project .listp h3 {
+		font-size: 1.1rem;
+	}
 
 	#projects .project .hidez {
 		margin: 0;
