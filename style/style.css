@@ -337,7 +337,7 @@ footer {
 
 	#about .sdee {
 		font-size: 1rem;
-		padding: 0.5rem;
+		margin: 0.8rem;
 	}
 
 	#testi .links li {
@@ -385,10 +385,6 @@ footer {
 		width: 150px;
 		height: 200px;
 		margin: 0.5rem 0;
-	}
-
-	#about .sdee {
-		margin: auto 2rem;
 	}
 
 	#projects .project .listp h3 {
