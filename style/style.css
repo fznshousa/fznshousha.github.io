@@ -377,12 +377,11 @@ footer {
 	}
 
 	#about .abtcont {
-		grid-template-columns: 1fr;
+		grid-template-columns: 100%;
 		justify-items: center;
 	}
 
 	#about img {
-		width: 180px;
 		height: 170px;
 		margin: 0.5rem 0;
 	}
