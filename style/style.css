@@ -35,17 +35,10 @@ html {
 	scroll-behavior: smooth;
 }
 
-#about .sdee p,
-#about .sdee p,
 #work p,
 #contact p,
-#contact a,
 #testi p,
-#testi a,
-#blog p,
-#blog a,
-footer p,
-footer a {
+#blog p {
 	font-size: 1.2rem;
 }
 
@@ -70,7 +63,7 @@ li {
 
 section {
 	background-color: var(--white);
-	padding: 20px;
+	padding: 20px 20px 0;
 	border-radius: 7px 100px 7px 7px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -143,12 +136,14 @@ main {
 }
 
 #about .sdee {
-	font-size: 1.2rem;
 	margin: 0.5rem 1rem 0;
 	padding-bottom: 1rem;
 	color: #0d212e;
 }
 
+#about .sdee p {
+	font-size: 1.2rem;
+}
 /* WORK Section */
 #work {
 	padding-bottom: 0;
@@ -174,8 +169,8 @@ main {
 }
 
 #projects .project {
-	background-color: var(--pmr);
 	/* background-color: #c3d822; */
+	background-color: var(--pmr);
 	padding-top: 20px;
 	border-radius: 7px 65px 7px 7px;
 }
@@ -188,7 +183,6 @@ main {
 
 #projects .project .listp h3 {
 	font-size: 1.3rem;
-	text-align: center;
 	color: var(--pmr);
 }
 
@@ -201,12 +195,12 @@ main {
 }
 
 #projects .project .li {
+	/* background-color: #21d833; */
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 	/* 225/230 */
 	gap: 2rem;
 	padding-top: 2rem;
-	/* background-color: #21d833; */
 	border-radius: 0 50px 0 0;
 }
 
@@ -251,28 +245,34 @@ main {
 }
 
 /* LINK DIV */
-#testi .links {
+.links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
 
-#testi .links ul {
-	/* background-color: var(--link); */
+.links ul {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 10px;
-}
-#testi .links li {
-	margin: 0.5rem auto 0;
+	border: 2px solid var(--pmr);
+	margin: 20px auto;
 }
 
-#testi .links a {
+#work .links ul,
+#contact .links ul {
+	margin-top: 0;
+}
+
+.links li {
+	margin: 5px 10px;
+}
+
+.links a {
 	font-size: 0.9rem;
 }
 
-#testi .links svg {
+.links svg {
 	width: 0.9rem;
 	height: 0.9rem;
 	align-self: center;
@@ -295,14 +295,10 @@ footer {
 	p,
 	nav a,
 	#about .sdee p,
-	#about .sdee p,
 	#work p,
 	#contact p,
-	#contact a,
 	#testi p,
-	#testi a,
 	#blog p,
-	#blog a,
 	footer p,
 	footer a {
 		font-size: 1rem;
@@ -330,26 +326,33 @@ footer {
 	}
 
 	#about img {
-		max-width: 150px;
-		height: 180px;
+		width: 150px;
+		height: 160px;
 		border-radius: 10px;
 	}
 
 	#about .sdee {
-		font-size: 1rem;
 		margin: 0.8rem;
 	}
 
-	#testi .links li {
-		margin: 0.5rem 0 0;
+	#about .sdee p {
+		font-size: 0.9rem;
 	}
 
-	#testi .links a {
-		font-size: 0.7rem;
+	.links ul {
+		margin: 15px auto 20px;
 	}
 
-	#testi .links svg {
-		height: 0.7rem;
+	.links li {
+		margin: 2px 6px;
+	}
+
+	.links a {
+		font-size: 0.8rem;
+	}
+
+	.links svg {
+		height: 0.8rem;
 	}
 }
 
@@ -358,21 +361,17 @@ footer {
 	a,
 	nav a,
 	#about .sdee p,
-	#about .sdee p,
 	#work p,
 	#contact p,
-	#contact a,
 	#testi p,
-	#testi a,
 	#blog p,
-	#blog a,
 	footer p,
 	footer a {
 		font-size: 0.85rem;
 	}
 
 	section {
-		padding: 15px;
+		padding: 15px auto 0;
 		border-radius: 7px 70px 7px 7px;
 	}
 
@@ -384,6 +383,10 @@ footer {
 	#about img {
 		height: 170px;
 		margin: 0.5rem 0;
+	}
+
+	#about .sdee {
+		margin: 0.8rem 0.8rem 0;
 	}
 
 	#projects .project .listp h3 {
@@ -398,5 +401,21 @@ footer {
 		padding: 2px;
 		margin: 0;
 		overflow: hidden;
+	}
+
+	.links ul {
+		margin: 0 auto 20px;
+	}
+
+	.links li {
+		margin: 1px 2px;
+	}
+
+	.links a {
+		font-size: 0.7rem;
+	}
+
+	.links svg {
+		height: 0.7rem;
 	}
 }
