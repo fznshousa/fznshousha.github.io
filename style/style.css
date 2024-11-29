@@ -1,7 +1,7 @@
 :root {
 	/* --pmr: #0077cc; */
 	--pmr: #0d212e;
-	--link: #005fa3;
+	--link: #0098ca;
 	--white: #fbfbfb;
 	--white1: #f0f4f7;
 }
@@ -15,8 +15,14 @@
 a {
 	font-size: 1.1rem;
 	text-decoration: none;
-	color: var(--pmr);
+	color: #0d212e;
 	transition: color 0.3s ease;
+}
+
+nav a,
+#projects .listp a,
+#blog .blogitem a {
+	color: var(--link);
 }
 
 a:hover {
@@ -270,6 +276,7 @@ main {
 
 .links a {
 	font-size: 0.9rem;
+	color: var(--pmr);
 }
 
 .links svg {
@@ -320,6 +327,7 @@ footer {
 		border-radius: 7px 100px 7px 7px;
 	}
 
+	/* ABOUT Section */
 	#about h2 {
 		text-align: center;
 		margin: 0;
@@ -375,6 +383,7 @@ footer {
 		border-radius: 7px 70px 7px 7px;
 	}
 
+	/* ABOUT Section */
 	#about .abtcont {
 		grid-template-columns: 100%;
 		justify-items: center;
@@ -389,6 +398,7 @@ footer {
 		margin: 0.8rem 0.8rem 0;
 	}
 
+	/* PROJEK Section */
 	#projects .project .listp h3 {
 		font-size: 1.1rem;
 	}
