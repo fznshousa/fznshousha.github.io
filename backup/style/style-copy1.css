@@ -63,6 +63,39 @@ li {
 	margin: 7px 0;
 }
 
+/* NAVBAR */
+
+/* NAVBAR */
+nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+nav ul {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+
+nav li {
+	margin: 0;
+}
+
+nav ul li a:hover {
+	color: var(--link);
+}
+
+/* MAIN */
+main {
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 28px;
+	padding: 0 15%;
+}
+
+/* SECTION */
 section {
 	background-color: var(--white);
 	padding: 20px 20px 0;
@@ -93,29 +126,8 @@ header .tagline {
 	font-style: italic;
 }
 
-/* NAVBAR */
-nav {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-nav ul {
-	display: flex;
-	gap: 10px;
-	list-style: none;
-}
-
-nav ul li a:hover {
-	color: var(--link);
-}
-
-main {
-	margin: 20px auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 28px;
-	padding: 0 15%;
+header svg {
+	display: none;
 }
 
 /* ABOUT Section */
@@ -292,6 +304,7 @@ footer {
 }
 
 /*MEDIA QUERIES*/
+/*TABLET QUERIES*/
 
 @media (max-width: 768px) {
 	p,
@@ -310,18 +323,20 @@ footer {
 		font-size: 1rem;
 	}
 
+	/* Tablet Main */
 	main {
 		padding: 0 5%;
 	}
 
-	header {
-		border-radius: 0 0 10vw 10vw;
-	}
-
+	/* Tablet Section */
 	section {
 		border-radius: 7px 100px 7px 7px;
 	}
 
+	/* Tablet Header */
+	header {
+		border-radius: 0 0 10vw 10vw;
+	}
 	/* Tablet About */
 	#about h2 {
 		text-align: center;
@@ -344,6 +359,7 @@ footer {
 		padding: 20px;
 	}
 
+	/* Tablet Link */
 	.links ul {
 		margin: 15px auto 20px;
 	}
@@ -361,6 +377,7 @@ footer {
 	}
 }
 
+/* MOBILE QUERIES */
 @media (max-width: 480px) {
 	p,
 	a,
@@ -375,6 +392,7 @@ footer {
 		font-size: 0.85rem;
 	}
 
+	/* Mobile Section */
 	section {
 		padding: 15px auto 0;
 		border-radius: 7px 70px 7px 7px;
@@ -386,8 +404,8 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 		padding: 8px 15px;
-		border-radius: 0 0 3px 3px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		border-radius: 0 0 5px 5px;
+		box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	header .logo {
@@ -426,6 +444,7 @@ footer {
 		overflow: hidden;
 	}
 
+	/* Mobile Link */
 	.links ul {
 		margin: 5px auto 20px;
 	}
